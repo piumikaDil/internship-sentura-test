@@ -9,7 +9,6 @@ function App() {
   const [id, setId] = useState(null)
 
   const saveDate = () => {
-    console.log('Ok bb');
     fetch('https://aa780059276645aea9ae85f6fca452d8.weavy.io/api/users', {
       method: 'POST',
       body: JSON.stringify({
@@ -24,7 +23,7 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        // Handle data
+
       })
       .catch((err) => {
         console.log(err.message);
@@ -32,7 +31,6 @@ function App() {
   }
 
   const getDate = () => {
-    console.log('Ok bb');
     fetch('https://aa780059276645aea9ae85f6fca452d8.weavy.io/api/users', {
       method: 'GET',
 
@@ -43,7 +41,6 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        // Handle data
       })
       .catch((err) => {
         console.log(err.message);
